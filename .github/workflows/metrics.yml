@@ -5,7 +5,6 @@ on:
   push:
     branches:
       - main
-      - metrics-dashboard
   schedule:
     - cron: "17 2 * * *"
 
