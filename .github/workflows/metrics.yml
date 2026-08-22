@@ -27,6 +27,9 @@ jobs:
           config_timezone: Asia/Kolkata
           extras_css: |
             svg.columns .items-wrapper { column-count: 2 !important; }
+          repositories_skipped: |
+            ac708726-coder/POT-HOLE-DETECTION7
+            ac708726-coder/forest-change-detection
           plugins_errors_fatal: yes
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
