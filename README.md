@@ -7,24 +7,17 @@
   />
 </div>
 
-## About
+## Hello
 
-I am an **AI/ML developer** interested in the complete machine-learning lifecycle:
-understanding data, designing experiments, training models, evaluating them honestly,
-optimizing inference, and shipping useful applications.
+I am an **AI/ML developer** who enjoys taking ideas from a rough notebook to a
+working system. I care about strong experiments, honest evaluation, efficient models,
+and software that makes machine learning genuinely useful.
 
-My work spans classical machine learning, deep neural networks, computer vision,
-natural-language processing, generative AI, and the engineering needed to deploy them.
-
-## Machine learning and deep learning
-
-| Area | What I work with |
-|---|---|
-| **Machine learning** | Regression, classification, clustering, feature engineering, ensemble methods, anomaly detection, and model selection |
-| **Deep learning** | Neural networks, CNNs, transfer learning, transformers, fine-tuning, regularization, and performance optimization |
-| **Computer vision** | Image classification, object detection, segmentation, tracking, augmentation, and video inference |
-| **NLP and generative AI** | Text classification, embeddings, transformers, LLM applications, retrieval-augmented generation, and evaluation |
-| **Data and MLOps** | Data preparation, experiment tracking, APIs, containerization, reproducible pipelines, monitoring, and deployment |
+- 🧠 **Machine learning:** predictive modeling, feature engineering, ensembles, clustering, anomaly detection, and model selection
+- ⚡ **Deep learning:** neural networks, CNNs, transformers, transfer learning, fine-tuning, and optimization
+- 👁️ **Computer vision:** classification, detection, segmentation, tracking, augmentation, and video inference
+- 💬 **NLP and generative AI:** embeddings, text models, LLM applications, retrieval-augmented generation, and evaluation
+- 🛠️ **ML engineering:** data pipelines, experiment tracking, APIs, containers, monitoring, and deployment
 
 ## Stack
 
@@ -51,17 +44,6 @@ It covers dataset preparation, PyTorch training, YOLO inference, performance tun
 apparent-severity estimation, detection history, and an interactive Streamlit interface.
 
 `PyTorch` · `YOLO11` · `OpenCV` · `Streamlit` · `Computer Vision`
-
-## GitHub activity
-
-<div align="center">
-  <img height="165" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=ac708726-coder&theme=transparent" alt="GitHub statistics" />
-  <img height="165" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=ac708726-coder&theme=transparent" alt="Most-used languages" />
-</div>
-
-<div align="center">
-  <img width="96%" src="https://github-readme-activity-graph.vercel.app/graph?username=ac708726-coder&bg_color=transparent&color=64748b&line=7c3aed&point=06b6d4&area=true&hide_border=true" alt="Contribution activity graph" />
-</div>
 
 <div align="center">
   <sub>Build carefully. Measure honestly. Keep improving.</sub>
