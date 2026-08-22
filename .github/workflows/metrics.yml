@@ -26,14 +26,7 @@ jobs:
           base: header, activity, community, repositories, metadata
           config_display: columns
           config_timezone: Asia/Kolkata
-          plugin_achievements: yes
-          plugin_achievements_display: compact
-          plugin_achievements_threshold: C
-          plugin_habits: yes
-          plugin_habits_charts: yes
-          plugin_habits_facts: yes
-          plugin_habits_from: 200
-          plugin_habits_days: 14
+          plugins_errors_fatal: yes
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
           plugin_languages: yes
