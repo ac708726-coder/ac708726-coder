@@ -1,0 +1,62 @@
+<svg width="1200" height="320" viewBox="0 0 1200 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1200" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#090D18" />
+      <stop offset="0.5" stop-color="#10162A" />
+      <stop offset="1" stop-color="#090D18" />
+    </linearGradient>
+    <linearGradient id="accent" x1="275" y1="75" x2="930" y2="250" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22D3EE">
+        <animate attributeName="stop-color" values="#22D3EE;#8B5CF6;#22D3EE" dur="6s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="1" stop-color="#8B5CF6">
+        <animate attributeName="stop-color" values="#8B5CF6;#EC4899;#8B5CF6" dur="6s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop stop-color="#22D3EE" stop-opacity="0.32" />
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0" />
+    </radialGradient>
+    <filter id="softGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="10" />
+    </filter>
+    <clipPath id="frame">
+      <rect width="1200" height="320" rx="24" />
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="320" fill="url(#background)" />
+    <path d="M0 80H1200M0 160H1200M0 240H1200M200 0V320M400 0V320M600 0V320M800 0V320M1000 0V320" stroke="#FFFFFF" stroke-opacity="0.035" />
+
+    <circle cx="170" cy="45" r="180" fill="url(#glow)" filter="url(#softGlow)">
+      <animate attributeName="cx" values="170;1030;170" dur="12s" repeatCount="indefinite" />
+    </circle>
+
+    <g opacity="0.85">
+      <circle cx="1050" cy="72" r="30" stroke="url(#accent)" stroke-width="2">
+        <animate attributeName="r" values="24;42;24" dur="4s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0.9;0.15;0.9" dur="4s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="1050" cy="72" r="8" fill="#22D3EE" />
+    </g>
+
+    <rect x="72" y="62" width="76" height="28" rx="14" fill="#161E34" stroke="#334155" />
+    <circle cx="91" cy="76" r="4" fill="#22D3EE">
+      <animate attributeName="opacity" values="1;0.25;1" dur="1.8s" repeatCount="indefinite" />
+    </circle>
+    <text x="103" y="81" fill="#CBD5E1" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600" letter-spacing="1.5">ONLINE</text>
+
+    <text x="72" y="162" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="58" font-weight="800" letter-spacing="2">ASMODEUS0611</text>
+    <rect x="72" y="184" width="570" height="4" rx="2" fill="url(#accent)">
+      <animate attributeName="width" values="170;570;170" dur="5s" repeatCount="indefinite" />
+    </rect>
+    <text x="72" y="228" fill="#A7B1C2" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="500" letter-spacing="5">AI / ML DEVELOPER</text>
+    <text x="74" y="270" fill="#64748B" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="3">PYTORCH  ·  COMPUTER VISION  ·  INTELLIGENT SYSTEMS</text>
+
+    <rect x="-220" y="302" width="220" height="2" fill="url(#accent)">
+      <animate attributeName="x" values="-220;1200" dur="3.5s" repeatCount="indefinite" />
+    </rect>
+  </g>
+  <rect x="0.75" y="0.75" width="1198.5" height="318.5" rx="23.25" stroke="#334155" stroke-width="1.5" />
+</svg>
