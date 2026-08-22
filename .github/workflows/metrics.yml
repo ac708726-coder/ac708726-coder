@@ -2,9 +2,6 @@ name: Profile metrics
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
   schedule:
     - cron: "17 2 * * *"
 
@@ -25,9 +22,13 @@ jobs:
           base: header, activity, community, repositories, metadata
           config_display: columns
           config_timezone: Asia/Kolkata
+          extras_css: |
+            svg.columns .items-wrapper { column-count: 2 !important; }
           plugins_errors_fatal: yes
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
           plugin_languages: yes
           plugin_languages_details: percentage
           plugin_languages_limit: 8
+          plugin_repositories: yes
+          plugin_repositories_featured: ac708726-coder/POT-HOLE-DETECTION

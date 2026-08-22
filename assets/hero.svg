@@ -1,51 +1,81 @@
-<svg width="1200" height="240" viewBox="0 0 1200 240" xmlns="http://www.w3.org/2000/svg">
+<svg width="1200" height="320" viewBox="0 0 1200 320" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="ink" x1="240" y1="0" x2="960" y2="0" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#2563EB" />
-      <stop offset="0.5" stop-color="#7C3AED" />
-      <stop offset="1" stop-color="#0891B2" />
+    <linearGradient id="edge" x1="0" y1="0" x2="1200" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C7FF36"/>
+      <stop offset="0.48" stop-color="#506BFF"/>
+      <stop offset="1" stop-color="#9D4EDD"/>
     </linearGradient>
-    <style>
-      .surface { fill: #F8FAFC; }
-      .rule { stroke: #CBD5E1; }
-      .name { fill: #111827; }
-      .role { fill: #64748B; }
-      @media (prefers-color-scheme: dark) {
-        .surface { fill: #0D1117; }
-        .rule { stroke: #30363D; }
-        .name { fill: #F0F6FC; }
-        .role { fill: #8B949E; }
-      }
-    </style>
-    <clipPath id="frame">
-      <rect width="1200" height="240" rx="18" />
-    </clipPath>
+    <linearGradient id="signal" x1="710" y1="66" x2="1128" y2="256" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C7FF36"/>
+      <stop offset="1" stop-color="#506BFF"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" stroke="#C8D1E0" stroke-opacity="0.075"/>
+      <circle cx="1" cy="1" r="1" fill="#C8D1E0" fill-opacity="0.16"/>
+    </pattern>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="frame"><rect width="1200" height="320" rx="24"/></clipPath>
   </defs>
 
   <g clip-path="url(#frame)">
-    <rect class="surface" width="1200" height="240" />
-    <line class="rule" x1="72" y1="48" x2="1128" y2="48" stroke-width="1" />
-    <line class="rule" x1="72" y1="192" x2="1128" y2="192" stroke-width="1" />
+    <rect width="1200" height="320" fill="#080B10"/>
+    <rect width="1200" height="320" fill="url(#grid)"/>
+    <path d="M0 252H1200" stroke="#C8D1E0" stroke-opacity="0.12"/>
+    <path d="M742 0V320" stroke="#C8D1E0" stroke-opacity="0.12"/>
 
-    <text class="role" x="72" y="31" font-family="Courier New, ui-monospace, monospace" font-size="12" letter-spacing="2.4">PROFILE / 0611</text>
-    <text class="role" x="1128" y="31" text-anchor="end" font-family="Courier New, ui-monospace, monospace" font-size="12" letter-spacing="2.4">AI + ML</text>
-
-    <text class="name" x="600" y="133" text-anchor="middle" font-family="Georgia, Times New Roman, serif" font-size="70" font-weight="600">Asmodeus0611</text>
-    <text class="role" x="600" y="169" text-anchor="middle" font-family="Courier New, ui-monospace, monospace" font-size="15" letter-spacing="5">AI / ML DEVELOPER</text>
-
-    <path d="M430 151H770" stroke="url(#ink)" stroke-width="3" stroke-linecap="round">
-      <animate attributeName="stroke-dasharray" values="0 340;340 0;0 340" dur="5s" repeatCount="indefinite" />
-    </path>
-
-    <rect x="72" y="211" width="8" height="8" rx="1" fill="#7C3AED">
-      <animate attributeName="opacity" values="1;0.15;1" dur="1.4s" repeatCount="indefinite" />
+    <rect x="42" y="34" width="10" height="10" fill="#C7FF36">
+      <animate attributeName="opacity" values="1;.15;1" dur="1.8s" repeatCount="indefinite"/>
     </rect>
-    <text class="role" x="92" y="219" font-family="Courier New, ui-monospace, monospace" font-size="11" letter-spacing="1.6">LEARNING / BUILDING / ITERATING</text>
+    <text x="68" y="44" fill="#AAB4C5" font-family="Cascadia Code, Consolas, monospace" font-size="13" letter-spacing="3">IDENTITY / 0611</text>
+    <text x="700" y="44" text-anchor="end" fill="#AAB4C5" font-family="Cascadia Code, Consolas, monospace" font-size="13" letter-spacing="3">AI · ML · DEEP LEARNING</text>
 
-    <circle cx="1098" cy="215" r="7" fill="none" stroke="#0891B2" stroke-width="2">
-      <animate attributeName="r" values="5;12;5" dur="2.8s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="1;0.2;1" dur="2.8s" repeatCount="indefinite" />
+    <text x="42" y="150" fill="#F4F7FB" font-family="Bahnschrift, Arial Narrow, sans-serif" font-size="82" font-weight="700" letter-spacing="2">ASMODEUS</text>
+    <text x="42" y="213" fill="none" stroke="#C7FF36" stroke-width="1.5" font-family="Bahnschrift, Arial Narrow, sans-serif" font-size="62" font-weight="700" letter-spacing="12">0611</text>
+    <text x="330" y="207" fill="#AAB4C5" font-family="Cascadia Code, Consolas, monospace" font-size="15" letter-spacing="4">AI / ML DEVELOPER</text>
+
+    <text x="42" y="282" fill="#F4F7FB" font-family="Cascadia Code, Consolas, monospace" font-size="13" letter-spacing="2.4">MODELS THAT SEE</text>
+    <circle cx="199" cy="277" r="3" fill="#506BFF"/>
+    <text x="216" y="282" fill="#F4F7FB" font-family="Cascadia Code, Consolas, monospace" font-size="13" letter-spacing="2.4">LEARN</text>
+    <circle cx="282" cy="277" r="3" fill="#9D4EDD"/>
+    <text x="299" y="282" fill="#F4F7FB" font-family="Cascadia Code, Consolas, monospace" font-size="13" letter-spacing="2.4">SHIP</text>
+
+    <g stroke="url(#signal)" stroke-width="1.5" stroke-opacity="0.7">
+      <path d="M799 91L896 56L992 104L1122 67" stroke-dasharray="8 10">
+        <animate attributeName="stroke-dashoffset" values="0;-36" dur="2.4s" repeatCount="indefinite"/>
+      </path>
+      <path d="M799 91L868 168L992 104L1070 190L1122 67" stroke-dasharray="8 10">
+        <animate attributeName="stroke-dashoffset" values="0;36" dur="3s" repeatCount="indefinite"/>
+      </path>
+      <path d="M868 168L794 244L930 265L1070 190L1152 252" stroke-dasharray="8 10">
+        <animate attributeName="stroke-dashoffset" values="0;-36" dur="2.7s" repeatCount="indefinite"/>
+      </path>
+      <path d="M896 56L930 265M992 104L1152 252" stroke-opacity="0.3"/>
+    </g>
+
+    <g fill="#080B10" stroke="url(#signal)" stroke-width="2">
+      <circle cx="799" cy="91" r="8"/><circle cx="896" cy="56" r="6"/>
+      <circle cx="992" cy="104" r="10"/><circle cx="1122" cy="67" r="7"/>
+      <circle cx="868" cy="168" r="9"/><circle cx="1070" cy="190" r="11"/>
+      <circle cx="794" cy="244" r="7"/><circle cx="930" cy="265" r="9"/>
+      <circle cx="1152" cy="252" r="7"/>
+    </g>
+
+    <circle cx="992" cy="104" r="4" fill="#C7FF36" filter="url(#glow)">
+      <animate attributeName="r" values="3;7;3" dur="2.2s" repeatCount="indefinite"/>
     </circle>
+    <circle cx="1070" cy="190" r="4" fill="#506BFF" filter="url(#glow)">
+      <animate attributeName="r" values="4;8;4" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="930" cy="265" r="3" fill="#9D4EDD" filter="url(#glow)">
+      <animate attributeName="r" values="3;7;3" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+
+    <rect x="0" y="0" width="210" height="3" fill="#C7FF36">
+      <animate attributeName="x" values="-210;1200" dur="5.5s" repeatCount="indefinite"/>
+    </rect>
   </g>
-  <rect x="0.75" y="0.75" width="1198.5" height="238.5" rx="17.25" fill="none" stroke="#64748B" stroke-opacity="0.35" stroke-width="1.5" />
+  <rect x="1" y="1" width="1198" height="318" rx="23" stroke="url(#edge)" stroke-opacity="0.75" stroke-width="2"/>
 </svg>
