@@ -31,4 +31,4 @@ jobs:
           plugin_languages_details: percentage
           plugin_languages_limit: 8
           plugin_repositories: yes
-          plugin_repositories_featured: ac708726-coder/POT-HOLE-DETECTION
+          plugin_repositories_featured: ac708726-coder/POT-HOLE-DETECTION7
